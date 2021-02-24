@@ -16,7 +16,7 @@ input, button, textarea, select { font: inherit }
 	
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
-body {background-color: purple}
+body {font-family: sans-serif;background-color: purple}
 
 h1 {
     color: white;
