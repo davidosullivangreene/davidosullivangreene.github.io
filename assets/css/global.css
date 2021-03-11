@@ -9,30 +9,36 @@ img { width: 100%; height: auto; display: block }
 h1, h2, h3, h4 { width: 100% }
 input, button, textarea, select { font: inherit }
 
+/* Desktops */
+@media (min-width: 768px) { body { padding: 4% 20% } }
+
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 12% 8% } }
+
 /* ================= ENDS ================ */
 
 body { 
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'playfair display', sans-serif;
 }
 
 h1 {
-    font-size: 78px;
-    font-weight: normal;
+    font-size: calc(80px + ( 70- 36) * ((100vw - 320px) / (1600 - 320)));
+    font-weight: bold;
     letter-spacing: -2px;
     margin-bottom: 12px;
     line-height: 1.2;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: calc(28px + (70 - 42) * ((100vw - 320px) / (1600 - 320)));  
     letter-spacing: 6px;
     margin-bottom: 48px;
     line-height: 1.2;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: calc(24px + (38 - 24) * ((100vw - 320px) / (1600 - 320))); 
     margin-top: 48px;
     margin-bottom: 20px;
     line-height: 1.2;
@@ -40,7 +46,7 @@ h3 {
 }
 
 p {
-    font-size: 20px;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
     margin-bottom: 16px;
 }
 
